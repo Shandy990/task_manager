@@ -19,7 +19,7 @@ class TaskFactory extends Factory
         return [
             'user_id' => $this->faker->numberBetween(1,1000),
             'status_id' => $this->faker->numberBetween(1,4),
-            'title' => $this->faker->title(),
+            'title' => $this->faker->text(),
             'description' => $this->faker->text(),
             'published_at'=> $this->faker->dateTimeBetween('now', 'now'),
             'created_at'=> $this->faker->dateTimeBetween('now', 'now'),
