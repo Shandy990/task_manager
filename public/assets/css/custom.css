@@ -1,0 +1,230 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+body {
+    background-color: #D2E0FB;
+}
+
+.custom__navbar {
+    background-color: #8EACCD;
+}
+.navbar__title-custom {
+    color: #F9F3CC !important;
+}
+.navbar__title-custom:hover {
+    color: #D7E5CA !important;
+}
+.main-content {
+    color: #7C96AB !important;
+}
+
+.content__container {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.landing__content {
+    margin-top: 50px;
+}
+.landing__title {
+    font-size: 42px !important;
+    font-weight: 900;
+}
+.landing__text-container {
+    padding-top: 80px;
+    transform: translateY(-80px);
+}
+.landing__text-content-title {
+    font-size: 34px !important;
+    font-weight: 600;
+}
+.landing__text-content-body {
+    font-size: 28px !important;
+    font-weight: 200;
+}
+.landing__text-content-footer {
+    font-size: 18px !important;
+    font-weight: 100;
+}
+.landing__img {
+    width: 70%;
+    margin-left: 50%;
+    transform: translate(-50%, -80px);
+    margin-top: 80px;
+    filter: drop-shadow(12px 8px 6px #618264);
+}
+.btn-landing {
+    width: 100%;
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+.btn-landing:hover {
+    width: 100%;
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+.btn-auth {
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+.btn-auth:hover {
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+
+.login__container {
+    padding-top: 140px;
+}
+
+.login__img {
+    width: 95%;
+}
+
+.register__container {
+    padding-top: 125px;
+}
+
+.input__custom {
+    border: 1px solid #8EACCD;
+    background-color: #8ECDDD;
+    color: #F9F3CC;
+}
+.input__custom::placeholder {
+    color: #F9F3CC;
+}
+.input__custom:focus {
+    border: 1px solid #8EACCD;
+    background-color: #D7E5CA;
+    color: #8EACCD;
+    box-shadow: none;
+}
+.input__custom:disabled {
+    border: 1px solid #8EACCD;
+    background-color: #BCA37F;
+    color: #D7E5CA;
+}
+
+.input__custom:checked {
+    border: 1px solid #7C96AB;
+    box-shadow: none;
+    accent-color: #8EACCD !important;
+    background-color: #8EACCD !important;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: #7C96AB;
+}
+
+.auth-link:hover {
+    text-decoration: none;
+    color: #7C96AB;
+}
+
+.task__table td {
+    border: 1px solid #D7E5CA;
+    background-color: #D2E0FB !important;
+}
+
+.task__table th {
+    border: 1px solid #D7E5CA;
+    background-color: #7C96AB !important;
+}
+
+.btn-edit {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+
+.btn-edit:hover {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+
+.btn-delete {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+
+.btn-delete:hover {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+
+.btn-create {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+
+.btn-create:hover {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+
+.table__no {
+    width: 5% !important;
+}
+
+.table__title {
+    width: 35% !important;
+}
+
+.table__desc {
+    width: 35% !important;
+}
+
+.table__action {
+    width: 20% !important;
+}
+
+.table__date {
+    width: 20% !important;
+}
+
+.navbar__logout {
+    padding: 10px;
+    background-color: #8EACCD;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.navbar__logout:hover {
+    padding: 10px;
+    background-color: #8EACCD;
+    border-radius: 5px;
+}
+
+.dropdown__custom {
+    margin-top: 8px !important;
+}
+
+.custom__btn-submit {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #F9F3CC;
+    transition: 0.5s all ease;
+}
+
+.custom__btn-submit:hover {
+    border: 1px solid #8EACCD;
+    background-color: #8EACCD;
+    color: #D7E5CA;
+}
+
+.custom__btn-cancel {
+    border: 1px solid #EAD7BB;
+    background-color: #BCA37F;
+    color: #FFF2D8;
+}

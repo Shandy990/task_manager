@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TasksRequest extends FormRequest
@@ -21,12 +22,19 @@ class TasksRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'user_id'=>'required|exists:users,id',
-            'status_id'=>'required|exists:statuses,id',
-            'title'=>'required|max:255',
-            'description'=>'required|max:2000',
-            'note'=>'max:2000',
-        ];
+        if ($this->user()?->is_admin) {
+            return [
+                'user_id' => 'required|exists:users,id',
+                'status_id' => 'required|exists:statuses,id',
+                'title' => 'required|max:255',
+                'description' => 'required|max:2000',
+                'image' => 'nullable|image',
+                'note' => 'max:2000',
+            ];
+        } else {
+            return [
+                'note' => 'max:2000',
+            ];
+        };
     }
 }

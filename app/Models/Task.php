@@ -14,11 +14,21 @@ class Task extends Model
     protected $fillable = [
         'user_id',
         'status_id',
+        'image_id',
         'title',
         'description',
         'note',
         'published_at',
     ];
+
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::forceDeleting(function(Task $task) {
+            $task->image?->delete();
+        });
+    }
 
     public function user():BelongsTo
     {
